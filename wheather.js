@@ -34,19 +34,19 @@ function displaydata(cityDetails)
 </div>
 <div class="row px-3">
    <p class="light-text">Humidity</p>
-   <p class="ml-auto">${humidity}</p>
+   <p class="ml-auto">${humidity} %</p>
 </div>
 <div class="row px-3">
    <p class="light-text">Wind-speed</p>
-   <p class="ml-auto">${speed}</p>
+   <p class="ml-auto">${speed} Km/h</p>
 </div>
 <div class="row px-3">
    <p class="light-text">Sunrise</p>
-   <p class="ml-auto">${rise}</p>
+   <p class="ml-auto">${rise} mm</p>
 </div>
 <div class="row px-3">
    <p class="light-text">Sunset</p>
-   <p class="ml-auto">${set}</p>
+   <p class="ml-auto">${set} mm</p>
 </div>
 
    `
