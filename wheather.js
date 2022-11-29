@@ -4,6 +4,11 @@ function search()
     cplace=place.value
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cplace}&appid=5b4bee0ba241d092159faf007e166080`)
     .then(d=>d.json()).then(res=>displaydata(res))
+    var dt = new Date();
+    document.getElementById("datetime1").innerHTML = (("0" + dt.getDate()).slice(-2)) + "/" + (("0" + (dt.getMonth() + 1)).slice(-2)) + "/" + (dt.getFullYear());
+    
+    document.getElementById("datetime").innerHTML =(("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2));
+  
    
 }
 function displaydata(cityDetails)
